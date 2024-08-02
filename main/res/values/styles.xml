@@ -1,0 +1,16 @@
+<resources>
+    <style name="CircularProgressBarStyle" parent="Widget.AppCompat.ProgressBar.Horizontal">
+        <item name="android:indeterminateOnly">false</item>
+        <item name="android:indeterminateBehavior">cycle</item>
+        <item name="android:indeterminateDrawable">@drawable/circular_progress_bar</item>
+    </style>
+    <style name="PreferenceTitleStyle">
+        <item name="android:textColor">#000000</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="PreferenceSummaryStyle">
+        <item name="android:textColor">#666666</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+</resources>

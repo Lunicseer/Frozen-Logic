@@ -1,0 +1,62 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:paddingLeft="16dp"
+                android:paddingTop="16dp"
+                android:paddingRight="16dp"
+                android:paddingBottom="16dp"
+                tools:context=".MainActivity">
+
+    <!-- Settings Button -->
+    <Button
+            android:id="@+id/settingsButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:text="Settings"
+            android:textSize="16sp" />
+
+    <FrameLayout
+            android:id="@+id/settingsContainer"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone" />
+
+    <com.google.android.material.progressindicator.CircularProgressIndicator
+            android:id="@+id/progressBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:max="100"
+            android:progress="0"
+            app:indicatorColor="#FF9800"
+            app:indicatorSize="330dp"/>
+    <Button
+            android:id="@+id/button"
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            android:layout_below="@id/progressBar"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/circle_button_background"
+            android:elevation="4dp"
+            android:text="Start Timer"
+            android:textColor="#FFFFFF"
+            android:textSize="24sp"
+            android:layout_marginTop="-320dp" />
+
+    <TextView
+            android:id="@+id/timerTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="75dp"
+            android:text="00"
+            android:textColor="#000000"
+            android:textSize="24sp"/>
+
+</RelativeLayout>

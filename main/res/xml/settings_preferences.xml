@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory
+            android:title="General Settings">
+
+        <CheckBoxPreference
+                android:key="show_settings"
+                android:title="Show Settings"
+                android:summary="Enable to show advanced settings"
+                android:defaultValue="false" />
+
+        <SwitchPreference
+                android:key="vibrate_mute_key"
+                android:title="Vibrate and Mute"
+                android:summary="Enable to vibrate and mute sound"
+                android:defaultValue="true" />
+
+        <!-- Add more preferences here as needed -->
+        <Preference
+                android:key="text_background_preference"
+                android:title="Text Background"
+                android:layout="@layout/custom_preference_layout" />
+
+    </PreferenceCategory>
+
+    <!-- Add more preference categories and preferences here as needed -->
+
+</PreferenceScreen>

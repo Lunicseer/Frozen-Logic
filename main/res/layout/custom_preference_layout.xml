@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="16dp">
+
+    <!-- White box background -->
+    <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFFFFF">
+
+        <!-- Linear layout to organize elements -->
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="8dp">
+
+            <!-- Preference title -->
+
+            <!-- Checkbox -->
+            <androidx.appcompat.widget.SwitchCompat
+                    android:id="@+id/vibrate_mute_switch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Vibrate and Mute"
+                    android:textSize="18sp"
+                    android:textColor="#000000" />
+
+            <!-- Summary text -->
+            <TextView
+                    android:id="@+id/preference_summary"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Replaces beeping with buzzing"/>
+
+            <androidx.appcompat.widget.SwitchCompat
+                    android:id="@+id/Test_mode_switch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Test Timer"
+                    android:textSize="18sp"
+                    android:textColor="#000000" />
+
+            <TextView
+                    android:id="@+id/preference_summary2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Makes initial timer 10 seconds"/>
+
+
+
+
+        </LinearLayout>
+    </FrameLayout>
+
+</RelativeLayout>
